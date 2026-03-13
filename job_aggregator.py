@@ -82,10 +82,10 @@ def generate_email(df):
 
 
 def send_email(body):
-
+    
+    import os
     sender = os.environ["EMAIL_ADDRESS"]
     password = os.environ["EMAIL_PASSWORD"]
-
     recipient = os.environ["EMAIL_ADDRESS"]
 
     msg = MIMEText(body)
